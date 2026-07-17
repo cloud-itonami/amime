@@ -1,0 +1,13 @@
+#!/usr/bin/env bb
+(require '[clojure.test :as t])
+
+(def suites
+  '[amime.methods.test-autorun
+    amime.methods.test-mesh
+    amime.methods.test-social])
+
+(apply require suites)
+(let [{:keys [fail error] :as result} (apply t/run-tests suites)]
+  (println (select-keys result [:test :pass :fail :error]))
+  (when (pos? (+ fail error))
+    (System/exit 1)))
