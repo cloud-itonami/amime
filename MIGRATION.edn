@@ -1,0 +1,54 @@
+{:migration/id :amime/flat-west-standalone
+ :migration/status :standalone-content-contained
+ :migration/source "etzhayyim/root:20-actors/amime"
+ :migration/canonical-repository "https://github.com/etzhayyim/com-etzhayyim-amime"
+ :migration/canonical-path "orgs/etzhayyim/com-etzhayyim-amime"
+ :migration/source-revision "b0eb3573964a3e5151826646e28b19a2b68e1b76"
+ :migration/content
+ {:root-files 18
+  :canonical-edn-files 9
+  :wire-artifacts 0
+  :go-files 0
+  :tinygo-files 0
+  :root-only-retired
+  [{:path "run_tests.sh"
+    :reason :superseded-by-repository-native-bb-test}]}
+ :migration/path-rewrites
+ [{:from "methods/" :to "src/amime/methods/"}
+  {:from "cells/" :to "src/amime/cells/"}
+  {:from "methods/test_*.cljc" :to "test/amime/methods/test_*.cljc"}
+  {:from "mesh.clj" :to "src/amime/mesh.clj"}]
+ :migration/canonicalization
+ {:metadata :edn
+  :data :edn
+  :external-wire-formats #{}
+  :deprecated-languages #{:go :tinygo}
+  :deprecated-language-action :prune-not-port}
+ :migration/dependencies
+ {com.etzhayyim/kotoba-datom "3c4b3b92234e59ba285119fd8b2ca4c2ee172ff8"
+  com.etzhayyim/social-publication "e8127d0661284b1c12ce1b216c84b5ed2db619ab"}
+ :migration/verification
+ {:command "bb test"
+  :tests 12
+  :assertions 55
+  :failures 0
+  :errors 0}
+ :migration/root-action
+ {:actor-directory :replace-with-moved-edn
+  :central-assets
+  {:retain
+   ["90-docs/adr/2606212020-amime-energy-mesh-flow-network.edn"
+    "50-infra/etzhayyim-did-web/src/registry/tier-b-actors.gen.ts"
+    "50-infra/etzhayyim-did-web/src/registry/infra-actors.ts"]
+   :regenerate
+   ["90-docs/_registry/graph.edn"
+    "90-docs/_registry/docs.edn"
+    "90-docs/adr/adr-index.edn"
+    "90-docs/adr/status-index.edn"
+    "90-docs/adr/status-registry.edn"]
+   :derived-wire
+   ["90-docs/_registry/docs.json"
+    "10-protocol/lexicons-bundle/src/lexicons.gen.json"]}}
+ :migration/known-gaps
+ [:root-tombstone-not-yet-committed
+  :west-revision-not-yet-repinned]}
