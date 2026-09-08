@@ -4,7 +4,7 @@
 (ns amime.methods.test-mesh
   (:require [amime.methods.mesh :as m]
             [amime.methods.emit :as emit]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing run-tests]]))
 
 (def seed-path "kotoba/seed.edn")

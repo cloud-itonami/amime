@@ -5,7 +5,7 @@
   (:require [amime.methods.mesh :as m]
             [amime.methods.autorun :as a]
             [amime.methods.kotoba :as k]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing run-tests]]
             #?(:clj [clojure.java.io :as io])))
 

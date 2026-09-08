@@ -15,7 +15,7 @@
                       multiplex. Concentration accrues onto the importing load over each
                       flowing link (:concentrates); single-path import is :depends-on (the
                       SPOF cascade). Resilience MAP — never a target-list."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [amime.methods.mesh :as mesh]
             #?(:clj [clojure.java.io :as io])))
 
