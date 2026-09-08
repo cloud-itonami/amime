@@ -28,7 +28,7 @@
   Re-solve with each link removed; the link whose loss-of-service is largest is the
   critical chokepoint, routed to REDUNDANCY (never named as a target — a map of where the
   mesh is brittle so it can be strengthened)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.java.io :as io])))
 
 ;; ── load ─────────────────────────────────────────────────────────────────────
