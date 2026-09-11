@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; amime 網目 — autonomous heartbeat: solve mesh → append resilience datoms to the ledger.
 (ns amime.methods.autorun
   "autorun.cljc — amime 網目 deterministic heartbeat (ADR-2606212020).

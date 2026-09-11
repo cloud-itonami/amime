@@ -69,10 +69,10 @@ manifest.edn           gates G1–G8 + non-goals N1–N5
 ## Run
 
 ```bash
-bb test       # 3 suites (12 tests / 55 assertions)
-bb mesh       # print the mesh flow + N-1 report
-bb emit       # regenerate out/energy-sos.kotoba.edn
-bb autorun    # heartbeat → append to the local, gitignored ledger
+kbb -M:test       # 3 suites (12 tests / 55 assertions)
+kbb -M:mesh       # print the mesh flow + N-1 report
+kbb -M:emit       # regenerate out/energy-sos.kotoba.edn
+kbb -M:autorun    # heartbeat → append to the local, gitignored ledger
 ```
 
 ## Pairs with

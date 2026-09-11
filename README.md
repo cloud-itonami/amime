@@ -10,9 +10,9 @@ A **commons mesh, never a market** (no price / no trade). A **resilience map, ne
 target-list**. **Sim only** — amime never dispatches; hikari actuates under Council gate.
 
 ```bash
-bb test                              # 12 tests / 55 assertions
-bb mesh                              # mesh flow + N-1 report
-bb emit                              # regenerate the committed kaname mirror
+kbb -M:test                              # 12 tests / 55 assertions
+kbb -M:mesh                              # mesh flow + N-1 report
+kbb -M:emit                              # regenerate the committed kaname mirror
 ```
 
 - ADR-2606212020 · clj-native R0 · `com.etzhayyim.amime.*`

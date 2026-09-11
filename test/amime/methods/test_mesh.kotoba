@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; amime 網目 — mesh flow-solver tests (incl. the SoS resilience + commons-not-market invariants).
-;; Run through `bb test`.
+;; Run through `kbb -M:test`.
 (ns amime.methods.test-mesh
   (:require [amime.methods.mesh :as m]
             [amime.methods.emit :as emit]

@@ -74,7 +74,7 @@
 
  :actor/tests
  {:runner "babashka"
-  :cmd "bb test"
+  :cmd "kbb -M:test"
   :verification {:tests 12 :assertions 55}
   :suites ["amime.methods.test-mesh"
            "amime.methods.test-autorun"
