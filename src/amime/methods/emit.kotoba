@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; amime 網目 — datom emission: own ledger EAVT + kaname-facing :energy mirror graph.
 (ns amime.methods.emit
   "amime 網目 — emission layer (ADR-2606212020).

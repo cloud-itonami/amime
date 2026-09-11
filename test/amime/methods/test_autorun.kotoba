@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; amime 網目 — ledger + heartbeat tests (content-addressed, idempotent-by-content).
-;; Run through `bb test`.
+;; Run through `kbb -M:test`.
 (ns amime.methods.test-autorun
   (:require [amime.methods.mesh :as m]
             [amime.methods.autorun :as a]

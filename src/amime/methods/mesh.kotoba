@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; amime 網目 — multi-site energy MESH flow solver (clj-native, pure stdlib).
 (ns amime.methods.mesh
   "amime 網目 — the multi-site energy-FLOW NETWORK the Energy Order suite lacked
