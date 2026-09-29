@@ -1,4 +1,4 @@
-# amime — CLAUDE.md
+# amime — AGENTS.md
 
 ## What this is
 

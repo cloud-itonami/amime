@@ -17,4 +17,4 @@ kbb -M:emit                              # regenerate the committed kaname mirro
 
 - ADR-2606212020 · clj-native R0 · `com.etzhayyim.amime.*`
 - Emits `out/energy-sos.kotoba.edn` → joined by **kaname 要** as the `:energy` domain (ADR-2606212000).
-- See `CLAUDE.md` for the model, invariants, and composition diagram.
+- See `AGENTS.md` for the model, invariants, and composition diagram.
